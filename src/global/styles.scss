@@ -25,3 +25,8 @@ $white: #FFFFFF;
 		border-radius: 51% 49% 51% 49%/72% 73% 27% 28%;
 	}
 }
+
+@keyframes fly {
+	from {transform: translateY(0.1rem);}
+	to {transform: translateY(-0.1rem);}
+}

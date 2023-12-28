@@ -1,0 +1,45 @@
+.contactButtonContainer {
+	font-size: 1.25rem;
+	background: $lightSecond;
+	color: $white;
+	padding: 0.7rem 1rem;
+	padding-left: 0.9rem;
+	display: flex;
+	align-items: center;
+	border: none;
+	border-radius: 1.6rem;
+	overflow: hidden;
+	transition: all 0.2s;
+
+	&:hover {
+		animation: fly 0.6s ease-in-out infinite alternate;
+	}
+
+	&:hover .contactButtonIcon {
+		transform: translateX(1.2rem) rotate(45deg) scale(1.1);
+	}
+
+	&:hover .contactButtonText {
+		transform: translateX(5rem);
+	}
+
+	&:active {
+		transform: scale(0.95);
+	}
+
+	.contactButtonIcon {
+		display: block;
+		transform-origin: center center;
+		transition: transform 0.3s ease-in-out;
+		width: 2rem;
+		height: 2rem;
+		background-image: url(/icons/send.png);
+		background-size: cover;
+	}
+
+	.contactButtonText {
+		display: block;
+		margin-left: 0.3rem;
+		transition: all 0.3s ease-in-out;
+	}
+}

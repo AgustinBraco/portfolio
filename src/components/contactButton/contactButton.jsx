@@ -2,11 +2,11 @@ import './contactButton.scss';
 
 const ContactButton = () => {
 	return (
-		<button>
+		<button className='contactButtonContainer'>
 			<div>
-				<i></i>
+				<i className='contactButtonIcon'></i>
 			</div>
-			<span>Send</span>
+			<span className='contactButtonText'>Send</span>
 		</button>
 	);
 };
