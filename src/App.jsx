@@ -1,9 +1,9 @@
-import { Picture } from './components';
+import { Home } from './screens';
 
 const App = () => {
 	return (
 		<div className="center">
-			<Picture width='30rem' height='20rem' />
+			<Home />
 		</div>
 	);
 };
