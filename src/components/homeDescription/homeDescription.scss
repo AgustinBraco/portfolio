@@ -1,0 +1,21 @@
+.homeTextContainer {
+	.homeText {
+		font-size: 3rem;
+	}
+
+	.homeTextName {
+		color: $darkFirst;
+	}
+
+	.homeTextDev {
+		color: $darkThird;
+	}
+
+	.homeTextQa {
+		color: $lightSecond;
+	}
+
+	.homeTextAcc {
+		color: $lightThird;
+	}
+}

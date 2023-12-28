@@ -1,9 +1,9 @@
-import './home.css';
+import './home.scss';
 import { HomePicture, HomeDescription } from '../../components'
 
 const Home = () => {
 	return (
-		<div className='center'>
+		<div>
 			<HomePicture/>
 			<HomeDescription />
 		</div>

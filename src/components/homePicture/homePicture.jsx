@@ -1,9 +1,9 @@
-import './homePicture.css';
+import './homePicture.scss';
 
 const HomePicture = () => {
 	return (
-		<div className="pictureContainer">
-			<div className="picture"></div>
+		<div className="homePictureContainer">
+			<div className="homePicture"></div>
 		</div>
 	);
 };
