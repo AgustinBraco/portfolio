@@ -2,7 +2,8 @@ import './contactButton.scss';
 
 const ContactButton = () => {
 	return (
-		<button className='contactButtonContainer'>
+		<button type='submit'
+		className='contactButtonContainer'>
 			<div>
 				<i className='contactButtonIcon'></i>
 			</div>
