@@ -2,7 +2,7 @@ import { Home } from './screens';
 
 const App = () => {
 	return (
-		<div className="center">
+		<div>
 			<Home />
 		</div>
 	);

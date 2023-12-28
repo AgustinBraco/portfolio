@@ -1,1 +1,2 @@
-export { default as Picture } from './picture/picture.jsx';
+export { default as HomePicture } from './homePicture/homePicture.jsx';
+export { default as HomeDescription } from './homeDescription/homeDescription.jsx';
