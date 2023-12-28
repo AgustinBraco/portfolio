@@ -1,11 +1,12 @@
 import './home.scss';
-import { HomePicture, HomeDescription } from '../../components'
+import { HomePicture, HomeDescription, HomeContact } from '../../components'
 
 const Home = () => {
 	return (
 		<div>
 			<HomePicture/>
 			<HomeDescription />
+			<HomeContact />
 		</div>
 	);
 };
