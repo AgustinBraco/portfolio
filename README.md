@@ -1,6 +1,6 @@
 
  
- <div align=center>
+ <!-- <div align=center>
   <a href="https://git.io/typing-svg" style="margin-left: 20px;">
     <img src="https://readme-typing-svg.demolab.com?font=Fira%20Code&center=true&width=440&height=45&color=754731&vCenter=true&duration=1&pause=1023&repeat=false&&lines=Nicol%C3%A1s+Perdomo" alt="Typing SVG" />
   </a>
@@ -20,7 +20,7 @@
   &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://www.instagram.com/nico.perdomo.03/"><img width="32px" alt="Instagram" title="Instagram" src="https://github.com/EmuSTTM/EmuSTTM/blob/main/sources/instagram-logo.png"></a>
 
-</p>
+</p> -->
 
 
 
@@ -44,7 +44,7 @@ o por mi perfil de [Linkedin](https://www.linkedin.com/in/nicol%C3%A1s-perdomo-5
 <details> 
   <summary><h3>📘 Mis proyectos</h3></summary>
 
-  <div align="center">
+  <!-- <div align="center">
     <a href="https://github.com/EmuSTTM/Electronic-Components-Store">
       <img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=EmuSTTM&repo=Electronic-Components-Store&theme=react&bg_color=754731&title_color=FCD757&hide_border=true&icon_color=F8D866&show_icons=false">
     </a>
@@ -58,7 +58,7 @@ o por mi perfil de [Linkedin](https://www.linkedin.com/in/nicol%C3%A1s-perdomo-5
       <img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=EmuSTTM&repo=React-Gif-Search&theme=react&bg_color=754731&title_color=FCD757&hide_border=true&icon_color=F8D866&show_icons=false">
     </a>
 
-  </div> 
+  </div>  -->
 
 #
 </details>
@@ -95,17 +95,17 @@ o por mi perfil de [Linkedin](https://www.linkedin.com/in/nicol%C3%A1s-perdomo-5
 </details>
 
 
-<p align='center'><a href='https://github.com/EmuSTTM'><img src='https://github-readme-streak-stats.herokuapp.com/?user=EmuSTTM&theme=flag-india'></a></p>
+<!-- <p align='center'><a href='https://github.com/EmuSTTM'><img src='https://github-readme-streak-stats.herokuapp.com/?user=EmuSTTM&theme=flag-india'></a></p> -->
 
 
 
 <p align=center >¡Gracias por visitar mi perfil de GitHub!</p> 
 
 
-<div align=center>
+<!-- <div align=center> -->
 
-![](https://komarev.com/ghpvc/?username=EmuSTTM&style=for-the-badge&color=orange)
-<img alt="followers" title="Follow me on Github" src="https://custom-icon-badges.demolab.com/github/followers/EmUSTTM?color=7c007c&labelColor=555555&style=for-the-badge&logo=person-add&label=Follow&logoColor=white"/></a>
+<!-- ![](https://komarev.com/ghpvc/?username=EmuSTTM&style=for-the-badge&color=orange)
+<img alt="followers" title="Follow me on Github" src="https://custom-icon-badges.demolab.com/github/followers/EmUSTTM?color=7c007c&labelColor=555555&style=for-the-badge&logo=person-add&label=Follow&logoColor=white"/></a> -->
 
 
-</div>
+<!-- </div> -->
