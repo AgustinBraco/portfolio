@@ -1,21 +1,30 @@
-import { useEffect } from 'react';
 import './contactTimer.scss';
+import { useEffect, useContext } from 'react';
+import { Context } from '../../global/context.jsx';
 
 const ContactTimer = () => {
-	useEffect(() => {
-		const currentTime = () => {
-			const element = document.getElementById('timer');
-			let date = new Date();
-			let hh = date.getHours();
-			let mm = date.getMinutes();
-			let ss = date.getSeconds();
-			let time = `${hh}:${mm}:${ss}`;
-			element.innerText = time;
-		};
+	const { contactStatus } = useContext(Context);
+	let startTimer;
 
-		currentTime();
-		setInterval(currentTime, 1000);
-	}, []);
+	useEffect(() => {
+		if (contactStatus) {
+			const currentTime = () => {
+				const element = document.getElementById('timer');
+				let date = new Date();
+				let hh = date.getHours();
+				let mm = date.getMinutes();
+				let ss = date.getSeconds();
+				let time = `${hh}:${mm}:${ss}`;
+				element.innerText = time;
+			};
+			currentTime();
+			startTimer = setInterval(currentTime, 1000);
+		}
+
+		return () => {
+			clearInterval(startTimer);
+		}
+	}, [contactStatus]);
 
 	return (
 		<div className='timerContainer'>

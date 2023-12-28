@@ -5,3 +5,4 @@ export { default as HomeContact } from './homeContact/homeContact.jsx';
 export { default as ContactTimer } from './contactTimer/contactTimer.jsx';
 export { default as ContactForm } from './contactForm/contactForm.jsx';
 export { default as ContactPicture } from './contactPicture/contactPicture.jsx';
+export { default as ContactButton } from './contactButton/contactButton.jsx';

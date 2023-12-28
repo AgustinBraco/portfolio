@@ -1,7 +1,11 @@
 import './skills.scss';
 import DataSkills from '../../data/skills.json';
+import { useContext } from 'react';
+import { Context } from '../../global/context.jsx';
 
 const Skills = () => {
+	const { setContactStatus } = useContext(Context);
+	setContactStatus(false);
 	return (
 		<section id='skills'>
 			<div>
