@@ -1,0 +1,23 @@
+.navbarContainer {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	margin-inline: 2rem;
+	text-align: end;
+	font-size: 3rem;
+	
+	.navbarList {
+		list-style: none;
+		display: flex;
+		flex-flow: column nowrap;
+		gap: 3rem;
+
+		.navbarItem {
+
+			.navbarLink {
+				text-decoration: none;
+			}
+		}
+	}
+}

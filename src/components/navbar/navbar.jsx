@@ -3,22 +3,32 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 	return (
-		<nav>
-			<ul>
-				<li>
-					<Link to='/'>Home</Link>
-				</li>
-				<li>
-					<Link to='/skills'>Skills</Link>
-				</li>
-				<li>
-					<Link to='/projects'>Projects</Link>
-				</li>
-				<li>
-					<Link to='/contact'>Contact</Link>
-				</li>
-			</ul>
-		</nav>
+		<div className='navbarContainer'>
+			<nav className='navbar'>
+				<ul className='navbarList'>
+					<li className='navbarItem'>
+						<Link className='navbarLink' to='/'>
+							Home
+						</Link>
+					</li>
+					<li className='navbarItem'>
+						<Link className='navbarLink' to='/skills'>
+							Skills
+						</Link>
+					</li>
+					<li className='navbarItem'>
+						<Link className='navbarLink' to='/projects'>
+							Projects
+						</Link>
+					</li>
+					<li className='navbarItem'>
+						<Link className='navbarLink' to='/contact'>
+							Contact
+						</Link>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	);
 };
 
