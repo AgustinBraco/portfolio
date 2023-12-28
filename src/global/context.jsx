@@ -1,10 +1,10 @@
 import { createContext, useState } from 'react';
 
 export const Context = createContext();
-export function CustomProvider({ children }) {
-	const [contactStatus, setContactStatus] = useLocalStorage('contact', false);
+export const CustomProvider = ({ children }) => {
 
-	function useLocalStorage(key, initialValue) {
+
+	const useLocalStorage = (key, initialValue) => {
 		const [storedValue, setStoredValue] = useState(() => {
 			try {
 				const item = window.localStorage.getItem(key);
@@ -26,7 +26,7 @@ export function CustomProvider({ children }) {
 		return [storedValue, setValue];
 	}
 
-	function useSessionStorage(key, initialValue) {
+	const useSessionStorage = (key, initialValue) => {
 		const [sessionValue, setSessionValue] = useState(() => {
 			try {
 				const item = window.sessionStorage.getItem(key);
@@ -47,6 +47,8 @@ export function CustomProvider({ children }) {
 
 		return [sessionValue, setSValue];
 	}
+	
+	const [contactStatus, setContactStatus] = useLocalStorage('contact', false);
 
 	return (
 		<Context.Provider
