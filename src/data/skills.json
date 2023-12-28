@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "description": "A JavaScript library for building user interfaces.",
+    "icon": "/icons/logo.png"
+  },
+  {
+    "id": 2,
+    "name": "Node",
+    "description": "JavaScript runtime environment for server-side development.",
+    "icon": "/icons/logo.png"
+  },
+  {
+    "id": 3,
+    "name": "Express",
+    "description": "Web application framework for Node.js.",
+    "icon": "/icons/logo.png"
+  },
+  {
+    "id": 4,
+    "name": "Mongo",
+    "description": "NoSQL database system oriented for document storage.",
+    "icon": "/icons/logo.png"
+  },
+  {
+    "id": 5,
+    "name": "Next",
+    "description": "React framework focusing on server-side rendering.",
+    "icon": "/icons/logo.png"
+  },
+  {
+    "id": 6,
+    "name": "Git",
+    "description": "Distributed version control system.",
+    "icon": "/icons/logo.png"
+  },
+  {
+    "id": 7,
+    "name": "Javascript",
+    "description": "Widely used programming language for web development.",
+    "icon": "/icons/logo.png"
+  },
+  {
+    "id": 8,
+    "name": "HTML",
+    "description": "Markup language for creating web page structures.",
+    "icon": "/icons/logo.png"
+  },
+  {
+    "id": 9,
+    "name": "CSS",
+    "description": "Styling language for formatting and designing web pages.",
+    "icon": "/icons/logo.png"
+  },
+  {
+    "id": 10,
+    "name": "SASS",
+    "description": "CSS preprocessor adding functionalities like variables and mixins.",
+    "icon": "/icons/logo.png"
+  },
+  {
+    "id": 11,
+    "name": "Mongoose",
+    "description": "Data modeling tool for MongoDB in Node.js.",
+    "icon": "/icons/logo.png"
+  },
+  {
+    "id": 12,
+    "name": "Docker",
+    "description": "Platform for developing, shipping, and running applications in containers.",
+    "icon": "/icons/logo.png"
+  }
+]
