@@ -1,6 +1,6 @@
 import './contactForm.scss';
-import { ContactButton } from '../';
 import { useState } from 'react';
+import { ContactButton } from '../';
 
 const ContactForm = () => {
 	const [formData, setFormData] = useState({
