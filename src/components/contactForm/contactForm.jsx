@@ -19,7 +19,6 @@ const ContactForm = () => {
 
 	const handleSubmit = async e => {
 		e.preventDefault();
-
 		try {
 			await fetch('https://testpocho.free.beeceptor.com', {
 				method: 'POST',
