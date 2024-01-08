@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { Context } from '../global/context.jsx';
-import { ProjectsCards } from '../components/index.js';
+import { ProjectsCards } from '../components';
 
 const Projects = () => {
 	const { setContactStatus } = useContext(Context);

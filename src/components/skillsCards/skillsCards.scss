@@ -1,0 +1,65 @@
+.cardsContainer {
+	display: flex;
+	flex-flow: row wrap;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+
+	border: solid 3px red;
+}
+
+.cardWrapper {
+	text-align: center;
+	padding: 1rem;
+	width: 40%;
+  margin: 1rem;
+	background: hsl(0, 0%, 42%);
+	position: relative;
+	transition: background 0.1s;
+
+	&:hover {
+		--active: 1;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: radial-gradient(
+			circle at calc(var(--x) * 1px) calc(var(--y) * 1px),
+			hsl(0 0% 100% / 0.15),
+			transparent 15vmin
+		);
+		background-attachment: fixed;
+		opacity: var(--active, 0);
+		transition: opacity 0.2s;
+		pointer-events: none;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: radial-gradient(
+				circle at calc(var(--x) * 1px) calc(var(--y) * 1px),
+				hsl(0 0% 100% / 0.5),
+				transparent 15vmin
+			),
+			transparent;
+		background-attachment: fixed;
+		pointer-events: none;
+		mask: linear-gradient(white, white) 50% 0 / 100% 4px no-repeat,
+			linear-gradient(white, white) 50% 100% / 100% 4px no-repeat,
+			linear-gradient(white, white) 0 50% / 4px 100% no-repeat,
+			linear-gradient(white, white) 100% 50% / 4px 100% no-repeat;
+	}
+}
+
+.cardTitle {
+	font-size: 3rem;
+}
+
+.cardImage {
+	width: 10rem;
+}
