@@ -5,9 +5,9 @@
 	.homePicture {
 		width: 100%;
 		height: 100%;
-		background-image: url(/me.png);
+		background-image: url(/icons/logo.png);
 		animation: bubble 10s ease-in-out infinite;
-		border: solid 3px $lightThird;
+		border: solid 3px $white;
 		background-size: cover;
 		background-position: 50% 25%;
 	}
