@@ -1,7 +1,6 @@
-import './contact.scss';
 import { useContext } from 'react';
-import { Context } from '../../global/context.jsx';
-import { ContactTimer, ContactForm, ContactPicture } from '../../components';
+import { Context } from '../global/context.jsx';
+import { ContactTimer, ContactForm, ContactPicture } from '../components/index.js';
 
 const Contact = () => {
 	const { setContactStatus } = useContext(Context);

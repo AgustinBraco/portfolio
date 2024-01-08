@@ -1,7 +1,6 @@
-import './error.scss';
 import { useContext } from 'react';
-import { Context } from '../../global/context.jsx';
-import { ErrorContainer } from '../../components';
+import { Context } from '../global/context.jsx';
+import { ErrorContainer } from '../components/index.js';
 
 const Error = () => {
 	const { setContactStatus } = useContext(Context);

@@ -1,7 +1,6 @@
-import './skills.scss';
 import { useContext } from 'react';
-import { Context } from '../../global/context.jsx';
-import { SkillsCards } from '../../components';
+import { Context } from '../global/context.jsx';
+import { SkillsCards } from '../components/index.js';
 
 const Skills = () => {
 	const { setContactStatus } = useContext(Context);
