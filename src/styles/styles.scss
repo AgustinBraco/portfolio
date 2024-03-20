@@ -1,20 +1,16 @@
-// Base
 @import 'base/global';
 @import 'base/responsive';
 @import 'base/keyframes';
 
-// Components
 @import 'components/Loader';
 @import 'components/Header';
 @import 'components/Logo';
 @import 'components/MenuButton';
 @import 'components/Menu';
 @import 'components/Profile';
+@import 'components/Picture';
 @import 'components/Info';
 @import 'components/Links';
 @import 'components/Contact';
-@import 'components/Footer';
-
 @import 'components/Cards';
-@import 'components/Picture';
-@import 'components/Form';
+@import 'components/Footer';

@@ -10,6 +10,34 @@ html {
   font-family: "Red Hat Display", sans-serif;
 }
 
+.Button {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 800;
+  border: black 1px solid;
+  border-radius: 5px 15px 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 17rem;
+  height: 3.5rem;
+  color: #000000;
+  background-color: transparent;
+}
+.Button:visited {
+  color: #000000;
+}
+
+.Arrow {
+  width: 2rem;
+  height: 2rem;
+  background-image: url("/assets/arrow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 @keyframes bubble {
   0% {
     border-radius: 51% 49% 51% 49%/72% 73% 27% 28%;
@@ -203,61 +231,165 @@ html {
   width: 100vw;
   height: 100vh;
   background-color: #f0f0f0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 2rem;
+}
+.Profile .ProfileTitle {
+  font-size: 5rem;
+  font-weight: 800;
+  text-align: center;
+}
+.Profile .ProfileSubtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 3rem;
+  padding-inline: 2.6rem;
+}
+.Profile .ProfileTextsContaienr {
+  display: flex;
+}
+.Profile .ProfileTextsContaienr .ProfileText {
+  font-size: 1.3rem;
+  padding-inline: 2.9rem;
+  padding-block: 0.3rem;
+}
+
+.PictureWrapper {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+}
+.PictureWrapper .Border {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  border: #ffffff 3px solid;
+  border-radius: 10px 25px 10px 25px;
+  width: 100%;
+  height: 100%;
+}
+.PictureWrapper .Picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  border-radius: 10px 25px 10px 25px;
+  width: 100%;
+  height: 100%;
 }
 
 .Info {
   width: 100vw;
-  height: 100vh;
+  height: 85vh;
   background-color: #868686;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  padding-inline: 4.7rem;
+}
+.Info .InfoTitle {
+  font-weight: 600;
+  font-size: 3.2rem;
+  padding-bottom: 1.5rem;
+}
+.Info .InfoText {
+  font-size: 1.4rem;
 }
 
 .Links {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   background-color: #f0f0f0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  padding-inline: 4rem;
+}
+.Links .LinkTitle {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-top: -0.5rem;
+}
+.Links .LinkTextFirst {
+  font-size: 1.4rem;
+  width: 10rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.Links .LinkTextSecond {
+  font-size: 1.4rem;
+  width: 25rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .Contact {
   width: 100vw;
-  height: 100vh;
-  background-color: #717171;
-}
-
-.Footer {
-  width: 100vw;
-  height: 32rem;
+  height: 75vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  padding: 4rem 3rem 2rem 3rem;
-  background-color: lightgray;
+  padding-block: 8rem;
+  padding-inline: 4rem;
+  background-color: #717172;
 }
-.Footer .FooterTitle {
+.Contact .ContactTitle {
+  font-weight: 600;
+  font-size: 3.2rem;
+}
+.Contact .ContactForm {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  height: 100%;
+  padding-top: 2.5rem;
+  padding-right: 2.5rem;
+}
+.Contact .ContactForm .ContactLabel {
+  display: flex;
+  flex-flow: column nowrap;
   font-size: 1.6rem;
   font-weight: 600;
-  padding-block: 0.8rem;
+  padding-bottom: 3rem;
 }
-.Footer .FooterText {
+.Contact .ContactForm .ContactLabel .ContactInput {
+  font-size: 1.5rem;
+  color: #000000;
+  border: none;
+  outline: none;
+  border-bottom: black solid 1px;
+  background-color: transparent;
+  height: 3.5rem;
+}
+.Contact .ContactForm .ContactLabel .ContactInput::placeholder {
   font-size: 1.3rem;
-  font-style: italic;
-  padding-block: 0.5rem;
-  text-decoration: none;
-  color: #000000;
+  color: #979797;
+  padding-left: 0.6rem;
 }
-.Footer .FooterText:visited {
+.Contact .ContactForm .ContactLabel .ContactTextarea {
+  font-size: 1.5rem;
   color: #000000;
+  border: none;
+  outline: none;
+  border-bottom: black solid 1px;
+  background-color: transparent;
+  resize: none;
+  height: 14rem;
 }
-.Footer .FooterLink {
-  display: block;
-  font-size: 1.6rem;
+.Contact .ContactForm .ContactSubmit {
+  background-color: transparent;
+  border: none;
+  font-size: 1.4rem;
   font-weight: 600;
-  font-style: italic;
-  padding-block: 0.6rem;
   text-decoration: none;
-  color: #000000;
-}
-.Footer .FooterLink:visited {
-  color: #000000;
+  width: 100%;
+  height: 100%;
+  margin-left: -6rem;
+  margin-right: -6rem;
 }
 
 .Cards {
@@ -325,6 +457,43 @@ html {
 .Cards .Card .CardLinks .CardLink .CardLogo {
   width: 3.2rem;
   height: 3.2rem;
+}
+
+.Footer {
+  width: 100vw;
+  height: 32rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 4rem 3rem 2rem 3rem;
+  background-color: lightgray;
+}
+.Footer .FooterTitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-block: 0.8rem;
+}
+.Footer .FooterText {
+  font-size: 1.3rem;
+  font-style: italic;
+  padding-block: 0.5rem;
+  text-decoration: none;
+  color: #000000;
+}
+.Footer .FooterText:visited {
+  color: #000000;
+}
+.Footer .FooterLink {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-style: italic;
+  padding-block: 0.6rem;
+  text-decoration: none;
+  color: #000000;
+}
+.Footer .FooterLink:visited {
+  color: #000000;
 }
 
 /*# sourceMappingURL=styles.css.map */

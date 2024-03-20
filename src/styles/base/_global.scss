@@ -17,3 +17,33 @@ html {
 	font-size: 62.5%;
 	font-family: 'Red Hat Display', sans-serif;
 }
+
+// Styles
+.Button {
+	text-decoration: none;
+	font-size: 1.4rem;
+	font-weight: 800;
+	border: black 1px solid;
+	border-radius: 5px 15px 5px 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	width: 17rem;
+	height: 3.5rem;
+	color: $black;
+	background-color: transparent;
+
+	&:visited {
+		color: $black;
+	}
+}
+
+.Arrow {
+	width: 2rem;
+	height: 2rem;
+	background-image: url('/assets/arrow.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}

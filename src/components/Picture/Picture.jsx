@@ -1,5 +1,6 @@
 export const Picture = () => (
-	<div>
-		{/* <img src='/assets/picture.png' alt='imagen' /> */}
+	<div className='PictureWrapper'>
+		<div className='Border'></div>
+		<img src='/assets/picture.png' alt='imagen' className='Picture' />
 	</div>
 );
