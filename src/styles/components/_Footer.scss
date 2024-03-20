@@ -1,0 +1,27 @@
+.Footer {
+	width: 100vw;
+	height: 32rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	padding: 4rem 3rem 2rem 3rem;
+	background-color: lightgray;
+
+	.FooterTitle {
+		font-size: 1.6rem;
+		font-weight: 600;
+    padding-block: 0.8rem;
+	}
+
+  .FooterText {
+    font-size: 1.3rem;
+    font-style: italic;
+  }
+
+	.FooterLink {
+		font-size: 1.6rem;
+		font-weight: 600;
+		font-style: italic;
+    padding-block: 0.6rem;
+	}
+}

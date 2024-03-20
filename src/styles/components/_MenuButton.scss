@@ -1,0 +1,26 @@
+.MenuButton {
+	cursor: pointer;
+	width: 6rem;
+	height: 6rem;
+	border: none;
+	background-color: $first;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: bubble 10s ease-in-out infinite;
+	transition: 0.5s linear 0s;
+
+	&.open {
+		background-color: $white;
+	}
+
+	.MenuIcon {
+		width: 3rem;
+		height: 3rem;
+
+		&.open {
+			width: 2rem;
+			height: 2rem;
+		}
+	}
+}

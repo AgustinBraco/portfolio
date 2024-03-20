@@ -1,0 +1,14 @@
+.LogoImage {
+	width: 6rem;
+	height: 6rem;
+	background-image: url('/assets/logo_close.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	animation: bubble 10s ease-in-out infinite;
+	transition: 0.5s linear 0s;
+
+	&.open {
+		background-image: url('/assets/logo_open.png');
+	}
+}

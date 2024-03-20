@@ -1,0 +1,23 @@
+@keyframes bubble {
+	0% {
+		border-radius: 51% 49% 51% 49%/72% 73% 27% 28%;
+	}
+	33% {
+		border-radius: 29% 71% 68% 32%/72% 48% 52% 28%;
+	}
+	66% {
+		border-radius: 31% 69% 33% 67%/57% 52% 48% 43%;
+	}
+	100% {
+		border-radius: 51% 49% 51% 49%/72% 73% 27% 28%;
+	}
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

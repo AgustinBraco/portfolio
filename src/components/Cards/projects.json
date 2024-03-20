@@ -1,0 +1,38 @@
+[
+	{
+		"id": 1,
+		"type": "Trabajo",
+		"rol": "Coordinador",
+		"title": "CC Manuel Suarez",
+		"deploy": "https://ccmanuelsuarez.com.ar/",
+		"repository": "https://github.com/AgustinBraco/ccmanuelsuarez/tree/main",
+		"image": "/assets/manuelsuarez.png"
+	},
+	{
+		"id": 4,
+		"type": "Experimento",
+		"rol": "Frontend",
+		"title": "The Wrong Way",
+		"deploy": "https://agustinbraco.github.io/Experimentos/the_wrong_way/",
+		"repository": "https://github.com/AgustinBraco/Experimentos/tree/main/the_wrong_way",
+		"image": "/assets/parallax.png"
+	},
+	{
+		"id": 2,
+		"type": "Experimento",
+		"rol": "Frontend",
+		"title": "Budget Maker",
+		"deploy": "https://agustinbraco.github.io/Experimentos/budget_maker/",
+		"repository": "https://github.com/AgustinBraco/Experimentos/tree/main/budget_maker",
+		"image": "/assets/budgetmaker.png"
+	},
+	{
+		"id": 3,
+		"type": "Experimento",
+		"rol": "Frontend",
+		"title": "Parallax",
+		"deploy": "https://agustinbraco.github.io/Experimentos/parallax/",
+		"repository": "https://github.com/AgustinBraco/Experimentos/tree/main/parallax",
+		"image": "/assets/parallax.png"
+	}
+]
