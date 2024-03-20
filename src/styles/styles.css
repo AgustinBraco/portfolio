@@ -23,6 +23,7 @@ html {
   width: 20rem;
   height: 4rem;
   color: #000000;
+  cursor: pointer;
   background-color: transparent;
 }
 .Button:visited {

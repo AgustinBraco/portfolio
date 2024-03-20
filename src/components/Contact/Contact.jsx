@@ -15,17 +15,28 @@ export const Contact = () => {
 		});
 	};
 
+	const apiKey = '';
+
 	const handleSubmit = async e => {
 		e.preventDefault();
 		try {
-			await fetch('https://testpocho.free.beeceptor.com', {
+			const payload = {
+				sender: { email: formData.email },
+				to: [{ email: 'bracoagustin@gmail.com' }],
+				subject: 'Contacto web',
+				htmlContent: `<html><head></head><body><p>Hello,</p>This is my first transactional email sent from Brevo.</p></body></html>`,
+			};
+	
+			await fetch('https://api.brevo.com/v3/smtp/email', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
+					'api-key': apiKey,
 				},
-				body: JSON.stringify(formData),
+				body: JSON.stringify(payload),
 			})
 				.then(res => {
+					console.log("res:", res)
 					if (res.status === 200) {
 						document.getElementById('ContactForm').reset();
 						alert('Gracias por tu mensaje!');
@@ -38,6 +49,30 @@ export const Contact = () => {
 			console.error('Error submitting form:', err);
 		}
 	};
+
+	// const handleSubmit = async e => {
+	// 	e.preventDefault();
+	// 	try {
+	// 		await fetch('https://testpocho.free.beeceptor.com', {
+	// 			method: 'POST',
+	// 			headers: {
+	// 				'Content-Type': 'application/json',
+	// 			},
+	// 			body: JSON.stringify(formData),
+	// 		})
+	// 			.then(res => {
+	// 				if (res.status === 200) {
+	// 					document.getElementById('ContactForm').reset();
+	// 					alert('Gracias por tu mensaje!');
+	// 				}
+	// 			})
+	// 			.catch(err => {
+	// 				console.log('Error fetching form:', err);
+	// 			});
+	// 	} catch (err) {
+	// 		console.error('Error submitting form:', err);
+	// 	}
+	// };
 
 	return (
 		<section className='Contact'>
