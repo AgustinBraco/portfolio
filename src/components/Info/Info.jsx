@@ -1,18 +1,18 @@
 export const Info = () => (
 	<section className='Info'>
 		<div>
-			<p className='InfoTitle'>End-top-end</p>
+			<p className='InfoTitle'>End-to -end</p>
 			<p className='InfoText'>
 				Experiencias innovadoras y ágiles para satisfacer las demandas digitales.
 			</p>
 			<p className='InfoText'>
-				Productos <b>Frotend</b> basados en <b>HTML, CSS, JavaScript y React</b>.
+				Productos <b>Frotend</b> creados con <b>HTML, CSS, JavaScript y React</b>.
 			</p>
 			<p className='InfoText'>
-				Aplicaciones <b>Backend</b> basadas en <b>Node, Express, Mongo y JavaScript</b>.
+				Aplicaciones <b>Backend</b> creadas con <b>Node, Express, Mongo y JavaScript</b>.
 			</p>
 			<p className='InfoText'>
-				Aplicaciones <b>Mobile</b> basadas en <b>React Native</b>.
+				Aplicaciones <b>Mobile</b> creadas con <b>React Native</b>.
 			</p>
 		</div>
 
