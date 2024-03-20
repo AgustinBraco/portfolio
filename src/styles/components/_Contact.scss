@@ -27,6 +27,7 @@
 			font-size: 1.6rem;
 			font-weight: 600;
 			padding-bottom: 3rem;
+			
 
 			.ContactInput {
 				font-size: 1.5rem;
@@ -36,6 +37,10 @@
 				border-bottom: black solid 1px;
 				background-color: transparent;
 				height: 3.5rem;
+
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
 
 				&::placeholder {
 					font-size: 1.3rem;

@@ -364,6 +364,9 @@ html {
   border-bottom: black solid 1px;
   background-color: transparent;
   height: 3.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .Contact .ContactForm .ContactLabel .ContactInput::placeholder {
   font-size: 1.3rem;
