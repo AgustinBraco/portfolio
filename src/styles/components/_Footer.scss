@@ -10,18 +10,30 @@
 	.FooterTitle {
 		font-size: 1.6rem;
 		font-weight: 600;
-    padding-block: 0.8rem;
+		padding-block: 0.8rem;
 	}
 
-  .FooterText {
-    font-size: 1.3rem;
-    font-style: italic;
-  }
+	.FooterText {
+		font-size: 1.3rem;
+		font-style: italic;
+		padding-block: 0.5rem;
+		text-decoration: none;
+
+		&:visited {
+			color: $black;
+		}
+	}
 
 	.FooterLink {
+		display: block;
 		font-size: 1.6rem;
 		font-weight: 600;
 		font-style: italic;
-    padding-block: 0.6rem;
+		padding-block: 0.6rem;
+		text-decoration: none;
+
+		&:visited {
+			color: $black;
+		}
 	}
 }

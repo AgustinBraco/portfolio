@@ -1,8 +1,20 @@
+import { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 export const Menu = props => {
+	const test = useRef(null);
+
+	useEffect(() => {
+			if (test.current && props.mode === 'fade') {
+					const timer = setTimeout(() => {
+						test.current.classList.add('close');
+					}, 600);
+					return () => clearTimeout(timer);
+			}
+	}, [props.mode]);
+
 	return (
-		<section className='Menu'>
+		<section ref={test} className={`Menu ${props.mode}`}>
 			<div className='MenuLinks'>
 				<Link onClick={props.toggleMenu} className='MenuLink' to={'/'}>
 					Inicio
@@ -10,11 +22,7 @@ export const Menu = props => {
 				<Link onClick={props.toggleMenu} className='MenuLink' to={'/projects'}>
 					Proyectos
 				</Link>
-				<Link
-					target='_blank'
-					className='MenuLink'
-					to={'https://discord.gg/97mYUxBZA4'}
-				>
+				<Link target='_blank' className='MenuLink' to={'https://discord.gg/97mYUxBZA4'}>
 					Discord
 				</Link>
 			</div>

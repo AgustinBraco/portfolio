@@ -1,5 +1,5 @@
 .loaderContainer {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 99999;
@@ -10,9 +10,7 @@
   justify-content: center;
   align-items: center;
   transition: linear 1s;
-
   opacity: 1;
-  visibility: visible;
   transition: opacity 1s, visibility 1s linear;
 }
 

@@ -32,8 +32,16 @@ html {
     opacity: 1;
   }
 }
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .loaderContainer {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 99999;
@@ -45,7 +53,6 @@ html {
   align-items: center;
   transition: linear 1s;
   opacity: 1;
-  visibility: visible;
   transition: opacity 1s, visibility 1s linear;
 }
 
@@ -105,12 +112,12 @@ html {
   background-color: #ffffff;
 }
 .MenuButton .MenuIcon {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .MenuButton .MenuIcon.open {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .Menu {
@@ -125,9 +132,20 @@ html {
   justify-content: space-around;
   padding-top: 5rem;
   padding-left: 6rem;
+  padding-bottom: 2rem;
   background-color: #f0f0f0;
+}
+.Menu.open {
   animation-name: appear;
   animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+}
+.Menu.close {
+  display: none;
+}
+.Menu.fade {
+  animation-name: disappear;
+  animation-duration: 0.6s;
   animation-timing-function: ease-in-out;
 }
 .Menu .MenuLinks {
@@ -219,12 +237,22 @@ html {
 .Footer .FooterText {
   font-size: 1.3rem;
   font-style: italic;
+  padding-block: 0.5rem;
+  text-decoration: none;
+}
+.Footer .FooterText:visited {
+  color: #000000;
 }
 .Footer .FooterLink {
+  display: block;
   font-size: 1.6rem;
   font-weight: 600;
   font-style: italic;
   padding-block: 0.6rem;
+  text-decoration: none;
+}
+.Footer .FooterLink:visited {
+  color: #000000;
 }
 
 .Cards {
