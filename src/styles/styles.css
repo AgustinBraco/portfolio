@@ -333,7 +333,7 @@ html {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  padding-block: 8rem;
+  padding-block: 5rem;
   padding-inline: 4rem;
   background-color: #717172;
 }
@@ -378,7 +378,7 @@ html {
   border-bottom: black solid 1px;
   background-color: transparent;
   resize: none;
-  height: 14rem;
+  height: 12rem;
 }
 .Contact .ContactForm .ContactSubmit {
   background-color: transparent;
@@ -390,6 +390,7 @@ html {
   height: 100%;
   margin-left: -6rem;
   margin-right: -6rem;
+  color: #000000;
 }
 
 .Cards {
@@ -399,8 +400,8 @@ html {
   justify-content: space-evenly;
   align-items: center;
   gap: 4rem;
-  padding-top: 12rem;
-  padding-bottom: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
 }
 .Cards .Card {
   position: relative;
@@ -424,7 +425,7 @@ html {
   filter: brightness(0.3);
 }
 .Cards .Card .CardTitle {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   font-style: italic;
   font-weight: 800;
   letter-spacing: 0.1rem;
@@ -432,7 +433,7 @@ html {
   z-index: 99999;
 }
 .Cards .Card .CardText {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 0.06rem;
   color: #ffffff;
@@ -447,16 +448,16 @@ html {
 }
 .Cards .Card .CardLinks .CardLink {
   background-color: rgba(217, 217, 217, 0.4352941176);
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
 }
 .Cards .Card .CardLinks .CardLink .CardLogo {
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .Footer {

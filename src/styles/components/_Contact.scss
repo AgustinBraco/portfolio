@@ -4,7 +4,7 @@
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-between;
-	padding-block: 8rem;
+	padding-block: 5rem;
 	padding-inline: 4rem;
 	background-color: #717172;
 
@@ -52,7 +52,7 @@
 				border-bottom: black solid 1px;
 				background-color: transparent;
 				resize: none;
-				height: 14rem;
+				height: 12rem;
 			}
 		}
 
@@ -66,6 +66,7 @@
       height: 100%;
       margin-left: -6rem;
       margin-right: -6rem;
+			color: $black;
 		}
 	}
 }
