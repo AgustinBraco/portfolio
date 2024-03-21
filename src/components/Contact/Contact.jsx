@@ -1,11 +1,23 @@
 import { useState } from 'react';
+import { Popup } from '..';
 
 export const Contact = () => {
+	const [response, setResponse] = useState({});
+	const [isPopupVisible, setIsPopupVisible] = useState(false);
 	const [formData, setFormData] = useState({
 		name: '',
 		email: '',
 		message: '',
 	});
+
+	const showPopup = data => {
+		setResponse(data);
+		setIsPopupVisible(true);
+		const timer = setTimeout(() => {
+			setIsPopupVisible(false);
+		}, 3500);
+		return () => clearTimeout(timer);
+	};
 
 	const handleChange = e => {
 		const { name, value } = e.target;
@@ -18,22 +30,22 @@ export const Contact = () => {
 	const handleSubmit = async e => {
 		e.preventDefault();
 		try {
-			await fetch('https://email-api-34x5.onrender.com/', {
+			const responseData = await fetch('https://email-api-34x5.onrender.com/', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
 				},
 				body: JSON.stringify(formData),
-			})
-				.then(res => {
-					if (res.status === 200) {
-						document.getElementById('ContactForm').reset();
-						alert('Gracias por tu mensaje!');
-					}
-				})
-				.catch(err => {
-					console.log('Error fetching form:', err);
-				});
+			});
+
+			if (responseData.status === 200) {
+				const data = await responseData.json();
+				document.getElementById('ContactForm').reset();
+				showPopup(data);
+			} else {
+				const error = await responseData.json();
+				showPopup(error);
+			}
 		} catch (err) {
 			console.error('Error submitting form:', err);
 		}
@@ -94,6 +106,7 @@ export const Contact = () => {
 					<div className='Arrow'></div>
 				</div>
 			</form>
+			{isPopupVisible && <Popup response={response} />}
 		</section>
 	);
 };

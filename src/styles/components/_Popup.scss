@@ -1,0 +1,25 @@
+.Popup {
+	position: fixed;
+	top: 3%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	width: 18rem;
+	height: 7rem;
+	border-radius: 5px 15px 5px 15px;
+	background-color: #868686;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	padding-left: 2rem;
+
+	.PopupTitle {
+		font-size: 1.5rem;
+		font-weight: 600;
+		color: $white;
+	}
+
+	.PopupText {
+		font-size: 1.3rem;
+		color: $white;
+	}
+}

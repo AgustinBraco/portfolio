@@ -340,6 +340,7 @@ html {
   padding-block: 5rem;
   padding-inline: 4rem;
   background-color: #717172;
+  position: relative;
 }
 .Contact .ContactTitle {
   font-weight: 600;
@@ -396,6 +397,30 @@ html {
   margin-left: -7.5rem;
   margin-right: -7.5rem;
   color: #000000;
+}
+
+.Popup {
+  position: fixed;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 18rem;
+  height: 7rem;
+  border-radius: 5px 15px 5px 15px;
+  background-color: #868686;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding-left: 2rem;
+}
+.Popup .PopupTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.Popup .PopupText {
+  font-size: 1.3rem;
+  color: #ffffff;
 }
 
 .Cards {

@@ -10,3 +10,4 @@ export { Info } from './Info/Info.jsx';
 export { Links } from './Links/Links.jsx';
 export { Cards } from './Cards/Cards.jsx';
 export { Contact } from './Contact/Contact.jsx';
+export { Popup } from './Popup/Popup.jsx';
