@@ -6,7 +6,7 @@ export const Info = () => (
 				Experiencias innovadoras y ágiles para satisfacer las demandas digitales.
 			</p>
 			<p className='InfoText'>
-				Productos <b>Frotend</b> creados con <b>HTML, CSS, JavaScript y React</b>.
+				Productos <b>Frotend</b> creados con <b>HTML, CSS, Sass, JavaScript y React</b>.
 			</p>
 			<p className='InfoText'>
 				Aplicaciones <b>Backend</b> creadas con <b>Node, Express, Mongo y JavaScript</b>.
