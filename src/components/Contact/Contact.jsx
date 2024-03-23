@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Popup } from '..';
 
+const API_KEY = import.meta.env.VITE_API_KEY;
+
 export const Contact = () => {
 	const [response, setResponse] = useState({});
 	const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -34,6 +36,7 @@ export const Contact = () => {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
+					'api_key': API_KEY,
 				},
 				body: JSON.stringify(formData),
 			});
