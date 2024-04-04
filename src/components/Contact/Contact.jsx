@@ -36,7 +36,7 @@ export const Contact = () => {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
-					'api_key': API_KEY,
+					api_key: API_KEY,
 				},
 				body: JSON.stringify(formData),
 			});

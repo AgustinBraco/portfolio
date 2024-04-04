@@ -12,11 +12,18 @@ export const Header = () => {
 		<div>
 			<header className='Header'>
 				{isMenuOpen ? <Logo mode='open' /> : <Logo mode='close' />}
-				{isMenuOpen ? <MenuButton mode='open' onClick={toggleMenu} /> : <MenuButton mode='close' onClick={toggleMenu} />
-				}
+				{isMenuOpen ? (
+					<MenuButton mode='open' onClick={toggleMenu} />
+				) : (
+					<MenuButton mode='close' onClick={toggleMenu} />
+				)}
 			</header>
-			
-			{isMenuOpen ? <Menu toggleMenu={toggleMenu} mode='open'/> : <Menu toggleMenu={toggleMenu} mode='fade'/>}
+
+			{isMenuOpen ? (
+				<Menu toggleMenu={toggleMenu} mode='open' />
+			) : (
+				<Menu toggleMenu={toggleMenu} mode='fade' />
+			)}
 		</div>
 	);
 };
