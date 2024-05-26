@@ -9,7 +9,7 @@
 	padding-bottom: 8rem;
 
 	.Card {
-    position: relative;
+		position: relative;
 		width: 33rem;
 		height: 22rem;
 		background-color: $black;
@@ -19,16 +19,16 @@
 		justify-content: center;
 		align-items: center;
 
-    .CardImage {
-      position: absolute;
-      border-radius: 5px 25px 5px 25px;
-      width: 100%;
-      height: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      filter: brightness(0.3);
-    }
+		.CardImage {
+			position: absolute;
+			border-radius: 5px 25px 5px 25px;
+			width: 100%;
+			height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			filter: brightness(0.3);
+		}
 
 		.CardTitle {
 			font-size: 2.6rem;
@@ -36,7 +36,7 @@
 			font-weight: 800;
 			letter-spacing: 0.1rem;
 			color: $white;
-      z-index: 99999;
+			z-index: 99999;
 		}
 
 		.CardText {
@@ -44,7 +44,7 @@
 			font-weight: 600;
 			letter-spacing: 0.06rem;
 			color: $white;
-      z-index: 99999;
+			z-index: 99999;
 		}
 
 		.CardLinks {
@@ -52,7 +52,7 @@
 			gap: 2rem;
 			padding-top: 3rem;
 			margin-bottom: -3rem;
-      z-index: 99999;
+			z-index: 99999;
 
 			.CardLink {
 				background-color: #d9d9d96f;

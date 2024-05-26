@@ -5,12 +5,12 @@ export const Menu = props => {
 	const test = useRef(null);
 
 	useEffect(() => {
-			if (test.current && props.mode === 'fade') {
-					const timer = setTimeout(() => {
-						test.current.classList.add('close');
-					}, 600);
-					return () => clearTimeout(timer);
-			}
+		if (test.current && props.mode === 'fade') {
+			const timer = setTimeout(() => {
+				test.current.classList.add('close');
+			}, 600);
+			return () => clearTimeout(timer);
+		}
 	}, [props.mode]);
 
 	return (

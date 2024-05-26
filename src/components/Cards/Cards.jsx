@@ -5,7 +5,7 @@ export const Cards = () => (
 	<div className='Cards'>
 		{projects.map(item => (
 			<div key={item.id} className='Card'>
-				<div className='CardImage' style={{ backgroundImage: `url(${item.image})`}}></div>
+				<div className='CardImage' style={{ backgroundImage: `url(${item.image})` }}></div>
 				<p className='CardTitle'>{item.title}</p>
 				<p className='CardText'>
 					{item.type} | {item.rol}

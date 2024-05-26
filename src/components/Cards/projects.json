@@ -1,47 +1,38 @@
 [
 	{
 		"id": 1,
-		"type": "Trabajo",
-		"rol": "Coordinador",
-		"title": "CC Manuel Suarez",
-		"deploy": "https://ccmanuelsuarez.com.ar/",
-		"repository": "https://github.com/AgustinBraco/ccmanuelsuarez/",
-		"image": "/assets/manuelsuarez.png"
+		"type": "Experimento",
+		"rol": "Frontend",
+		"title": "Presupuestador",
+		"deploy": "https://agustinbraco.github.io/experiments/pages/budget/",
+		"repository": "https://github.com/AgustinBraco/experiments/tree/main/pages/budget",
+		"image": "/assets/budget.png"
 	},
 	{
 		"id": 2,
 		"type": "Herramienta",
 		"rol": "Backend",
-		"title": "Email API",
+		"title": "Mailing API",
 		"deploy": "https://email-api-34x5.onrender.com/",
 		"repository": "https://github.com/AgustinBraco/email_api",
 		"image": "/assets/email.png"
 	},
 	{
 		"id": 3,
-		"type": "Experimento",
-		"rol": "Frontend",
-		"title": "Budget Maker",
-		"deploy": "https://agustinbraco.github.io/experiments/budget_maker/",
-		"repository": "https://github.com/AgustinBraco/experiments/tree/main/budget_maker",
-		"image": "/assets/budgetmaker.png"
+		"type": "Herramienta",
+		"rol": "Backend",
+		"title": "Mensajería BOT",
+		"deploy": "https://github.com/AgustinBraco/message_bot",
+		"repository": "https://github.com/AgustinBraco/message_bot",
+		"image": "/assets/bot.png"
 	},
 	{
 		"id": 4,
 		"type": "Experimento",
 		"rol": "Frontend",
 		"title": "Parallax",
-		"deploy": "https://agustinbraco.github.io/experiments/parallax/",
-		"repository": "https://github.com/AgustinBraco/experiments/tree/main/parallax",
-		"image": "/assets/parallax.png"
-	},
-	{
-		"id": 5,
-		"type": "Experimento",
-		"rol": "Frontend",
-		"title": "The Wrong Way",
-		"deploy": "https://agustinbraco.github.io/experiments/the_wrong_way/",
-		"repository": "https://github.com/AgustinBraco/experiments/tree/main/the_wrong_way",
-		"image": "/assets/tww.png"
+		"deploy": "https://agustinbraco.github.io/experiments/pages/parallax/",
+		"repository": "https://github.com/AgustinBraco/experiments/tree/main/pages/parallax",
+		"image": "/assets/soon.png"
 	}
 ]
