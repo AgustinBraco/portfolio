@@ -1,25 +1,25 @@
-.PictureWrapper {
-	position: relative;
-	width: 20rem;
-	height: 20rem;
+#Picture {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
 
-	.Border {
-		position: absolute;
-		top: 1.5rem;
-		left: 1.5rem;
-		border: $white 3px solid;
-		border-radius: 10px 25px 10px 25px;
-		width: 100%;
-		height: 100%;
-	}
+  .PictureBorder {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    border: $white 3px solid;
+    border-radius: 10px 25px 10px 25px;
+    width: 100%;
+    height: 100%;
+  }
 
-	.Picture {
-		position: absolute;
-		top: 0;
-		left: 0;
-		object-fit: cover;
-		border-radius: 10px 25px 10px 25px;
-		width: 100%;
-		height: 100%;
-	}
+  .PictureImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 10px 25px 10px 25px;
+    width: 100%;
+    height: 100%;
+  }
 }

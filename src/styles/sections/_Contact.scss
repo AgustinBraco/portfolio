@@ -1,0 +1,85 @@
+#Contact {
+  background-color: $lightgrey;
+  width: 100vw;
+  height: 100vh;
+  padding-inline: 3rem;
+  padding-top: 5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 3.5rem;
+  position: relative;
+
+  .ContactTitle {
+    width: 100%;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+
+  #ContactForm {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+
+    .ContactLabel {
+      display: flex;
+      flex-flow: column nowrap;
+      font-size: 1.6rem;
+      gap: 0.8rem;
+      font-weight: 600;
+      padding-bottom: 3rem;
+
+      .ContactInput {
+        font-size: 1.5rem;
+        color: $black;
+        border: 1px $black solid;
+        border-radius: 15px 3px 15px 3px;
+        outline: none;
+        background-color: transparent;
+        height: 4rem;
+        padding-left: 0.8rem;
+
+        &::placeholder {
+          font-size: 1.3rem;
+          color: rgba($grey, 0.4);
+          padding-left: 0.5rem;
+        }
+      }
+
+      .ContactTextarea {
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 1.5rem;
+        color: $black;
+        border: 1px $black solid;
+        border-radius: 12px 3px 12px 3px;
+        outline: none;
+        background-color: transparent;
+        resize: none;
+        padding: 1rem;
+
+        &::placeholder {
+          font-size: 1.3rem;
+          color: rgba($grey, 0.4);
+          padding-left: 0.5rem;
+        }
+      }
+    }
+
+    .ContactSubmit {
+      color: $black;
+      background-color: transparent;
+      border: 1px $black solid;
+      border-radius: 10px 3px 12px 3px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      padding: 1rem;
+      width: 35%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+	#ContactForm .ContactLabel:last-child {
+		align-items: end;
+	}
+}

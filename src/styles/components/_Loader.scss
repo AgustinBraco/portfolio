@@ -1,27 +1,27 @@
-.loaderContainer {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 9999999999999;
-	background-color: #ffffff;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: linear 1s;
-	opacity: 1;
-	transition: opacity 1s, visibility 1s linear;
+#Loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999999999;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: linear 1s;
+  opacity: 1;
+  transition: opacity 1s, visibility 1s linear;
+
+  .Loading {
+    background-image: url('/assets/loader.svg');
+    background-size: cover;
+    width: 10rem;
+    height: 10rem;
+  }
 }
 
-.loaderContainer.loaded {
-	opacity: 0;
-	visibility: hidden;
-}
-
-.loader {
-	background-image: url('/assets/loader.svg');
-	background-size: cover;
-	width: 10rem;
-	height: 10rem;
+#Loader.Loaded {
+  opacity: 0;
+  visibility: hidden;
 }

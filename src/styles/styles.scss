@@ -1,17 +1,18 @@
-@import 'base/global';
+// Base
 @import 'base/responsive';
+@import 'base/global';
 @import 'base/keyframes';
 
+// Components
 @import 'components/Loader';
-@import 'components/Header';
 @import 'components/Logo';
-@import 'components/MenuButton';
-@import 'components/Menu';
-@import 'components/Profile';
 @import 'components/Picture';
-@import 'components/Info';
-@import 'components/Links';
-@import 'components/Contact';
-@import 'components/Popup';
 @import 'components/Cards';
-@import 'components/Footer';
+@import 'components/Popup';
+
+// Sections
+@import 'sections/Home';
+@import 'sections/Info';
+@import 'sections/Projects';
+@import 'sections/Contact';
+@import 'sections/Footer';

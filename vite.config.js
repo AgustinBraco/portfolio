@@ -5,5 +5,10 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 export default defineConfig({
-	plugins: [react()],
+  plugins: [react()],
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  },
+  base: '/',
 });

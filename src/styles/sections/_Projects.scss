@@ -1,0 +1,15 @@
+#Projects {
+  width: 100vw;
+  background-color: $background;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  padding-inline: 3rem;
+  padding-block: 5rem;
+
+  .ProjectsTitle {
+    width: 100%;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+}

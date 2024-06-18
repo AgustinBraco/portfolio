@@ -1,0 +1,21 @@
+#Info {
+  width: 100vw;
+  height: 100vh;
+  background-color: $lightgrey;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  padding-left: 3rem;
+
+  .InfoTitle {
+    width: 100%;
+    font-weight: 600;
+    font-size: 3.2rem;
+		margin-bottom: 1rem;
+  }
+
+  .InfoText {
+    width: 80%;
+    font-size: 1.4rem;
+  }
+}

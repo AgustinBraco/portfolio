@@ -1,14 +1,24 @@
-.LogoImage {
-	width: 6rem;
-	height: 6rem;
-	background-image: url('/assets/logo_close.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	animation: bubble 10s ease-in-out infinite;
-	transition: 0.5s linear 0s;
+#Logo {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  background-image: url('/assets/logo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-color: $white;
+  border-radius: 50%;
+  width: 5.5rem;
+  height: 5.5rem;
+  z-index: 99999;
+}
 
-	&.open {
-		background-image: url('/assets/logo_open.png');
-	}
+#Logo.play {
+  animation: bubbleOn 8s ease-in-out infinite;
+  transition: 0.2s linear 0s;
+}
+
+#Logo.stop {
+  animation: bubbleOff 0.8s linear;
+  transition: 0.2s linear 0s;
 }

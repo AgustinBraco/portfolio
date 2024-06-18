@@ -1,20 +1,14 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Home, Projects, Error } from './screens';
-import { Loader, Header, Footer } from './components';
+import { Home, Info, Projects, Contact, Footer } from './sections';
+import { Loader, Logo } from './components';
 
-const App = () => {
-	return (
-		<Router>
-			<Loader />
-			<Header />
-			<Routes>
-				<Route exact path='/' element={<Home />} />
-				<Route exact path='/projects' element={<Projects />} />
-				<Route path='*' element={<Error />} />
-			</Routes>
-			<Footer />
-		</Router>
-	);
-};
-
-export default App;
+export const App = () => (
+  <>
+    <Loader />
+    <Logo />
+    <Home />
+    <Info />
+    <Projects />
+    <Contact />
+    <Footer />
+  </>
+);
