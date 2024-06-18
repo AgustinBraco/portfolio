@@ -8,7 +8,7 @@
   flex-flow: column nowrap;
   gap: 3.5rem;
   position: relative;
-
+  
   .ContactTitle {
     width: 100%;
     font-weight: 600;
@@ -19,7 +19,8 @@
     display: flex;
     flex-flow: column nowrap;
     gap: 2rem;
-
+    padding-inline: 2rem;
+     
     .ContactLabel {
       display: flex;
       flex-flow: column nowrap;
